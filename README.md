@@ -1,4 +1,3 @@
-`# GlobalSolution
 
 ## Sumário
 1. [Introdução](#introdução)
@@ -104,50 +103,69 @@ dotnet ef database update`
 Estrutura do Projeto
 --------------------
 
-plaintext
-
-Copiar código
-
-`GlobalSolution/
-├── Controllers/
-│   ├── UsuariosController.cs
-│   ├── DispositivosController.cs
-│   ├── ConsumoEnergiaController.cs
-│   ├── ConfiguracoesAutomacaoController.cs
-│   ├── RelatoriosController.cs
-│   └── AlertasNotificacoesController.cs
-├── Models/
-│   ├── Usuario.cs
-│   ├── Dispositivo.cs
-│   ├── ConsumoEnergia.cs
-│   ├── ConfiguracaoAutomacao.cs
-│   ├── Relatorio.cs
-│   └── AlertaNotificacao.cs
-├── DTOs/
-│   ├── UsuarioCreateDTO.cs
-│   ├── UsuarioReadDTO.cs
-│   ├── UsuarioUpdateDTO.cs
-│   ├── DispositivoCreateDTO.cs
-│   ├── DispositivoReadDTO.cs
-│   ├── DispositivoUpdateDTO.cs
-│   ├── ConsumoEnergiaCreateDTO.cs
-│   ├── ConsumoEnergiaReadDTO.cs
-│   ├── ConsumoEnergiaUpdateDTO.cs
-│   ├── ConfiguracaoAutomacaoCreateDTO.cs
-│   ├── ConfiguracaoAutomacaoReadDTO.cs
-│   ├── ConfiguracaoAutomacaoUpdateDTO.cs
-│   ├── RelatorioCreateDTO.cs
-│   ├── RelatorioReadDTO.cs
-│   ├── RelatorioUpdateDTO.cs
-│   ├── AlertaNotificacaoCreateDTO.cs
-│   ├── AlertaNotificacaoReadDTO.cs
-│   └── AlertaNotificacaoUpdateDTO.cs
-├── Repositories/
-│   ├── IRepository.cs
-│   └── Repository.cs
-├── appsettings.json
+```
+`Sorriso_em_Jogo/
+├── Application/
+│   ├── Services/
+│   │   ├── FeedbackService.cs
+│   │   ├── HabitoService.cs
+│   │   ├── ...
+│   └── ViewModels/
+│       ├── FeedbackViewModel.cs
+│       ├── HabitoViewModel.cs
+│       ├── ...
+├── Domain/
+│   └── Entities/
+│       └── Models/
+│           ├── Feedback.cs
+│           ├── Habito.cs
+│           ├── Procedimento.cs
+│           ├── ...
+├── Infrastructure/
+│   ├── Data/
+│   │   └── ApplicationDbContext.cs
+│   └── Repositories/
+│       ├── IFeedbackRepository.cs
+│       ├── IHabitoRepository.cs
+│       ├── FeedbackRepository.cs
+│       ├── HabitoRepository.cs
+│       ├── ...
+├── Presentation/
+│   ├── Controllers/
+│   │   ├── HomeController.cs
+│   │   ├── FeedbacksController.cs
+│   │   ├── HabitosController.cs
+│   │   ├── ...
+│   ├── Views/
+│   │   ├── Home/
+│   │   │   └── Index.cshtml
+│   │   ├── Feedbacks/
+│   │   │   ├── Index.cshtml
+│   │   │   ├── Create.cshtml
+│   │   │   ├── Edit.cshtml
+│   │   │   ├── Delete.cshtml
+│   │   │   └── Details.cshtml
+│   │   ├── Habitos/
+│   │   │   ├── Index.cshtml
+│   │   │   ├── Create.cshtml
+│   │   │   ├── Edit.cshtml
+│   │   │   ├── Delete.cshtml
+│   │   │   └── Details.cshtml
+│   │   └── Shared/
+│   │       ├── _Layout.cshtml
+│   │       └── _ValidationScriptsPartial.cshtml
+│   └── Properties/
+├── wwwroot/
+│   ├── css/
+│   ├── js/
+│   ├── images/
+│   └── ...
 ├── Program.cs
-└── Startup.cs`
+├── Sorriso_em_Jogo.csproj
+├── appsettings.Development.json
+├── appsettings.json
+├── README.md`
+```
 
 Executando a Aplicação
 ----------------------
